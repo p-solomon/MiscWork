@@ -9,14 +9,14 @@ import repository.UserRepos;
 
 import java.util.UUID;
 
-public class Factory {
+public class ProductFactory {
     private final UserRepos userRepos;
 
     private final FormFactory formFactory;
     JsonUuid jsonUuid = JsonUuid.getInstance();
 
 
-    public Factory(UserRepos userRepos, FormFactory formFactory) {
+    public ProductFactory(UserRepos userRepos, FormFactory formFactory) {
         this.userRepos = userRepos;
         this.formFactory = formFactory;
     }
