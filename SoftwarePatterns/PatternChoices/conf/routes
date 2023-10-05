@@ -3,7 +3,12 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           controllers.HomeController.index()
+POST    /addUser           controllers.UserController.addUser(req: Request)
+POST    /deleteUser       controllers.UserController.deleteUser(req : Request)
+POST    /updateUser       controllers.UserController.updateUser(req : Request)
+POST    /userInfo       controllers.UserController.getUserInfo(req : Request)
+POST    /userLogin       controllers.UserController.userLogin(req : Request)
+POST    /getCustomers       controllers.UserController.getCustomers(req : Request)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
